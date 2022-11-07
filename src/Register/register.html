@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epsilon - Register</title>
+
+    <script defer src="register.js"></script>
+</head>
+<body>
+    <div>
+        <form id="form">
+            
+            <!-- Section 1 -->
+            <div id="section1">
+                <div class="team-name"> 
+                    <label>
+                        <b>Team Name</b>
+                        <input type="text" name="name" placeholder="Team Name" id="name" onblur="validateName()" value="test">
+                    </label>
+                    <label>
+                        <b>Team Password</b>
+                        <input type="password" name="password" placeholder="Password" id="password" onblur="validateName()" value="testPass">
+                    </label>
+                    <p id="nameError" class="bg-yellow-400"></p>
+                </div>
+
+                <div class="modules">
+                    <h2>Modules</h2>
+                    <h3>General Modules</h3>
+                        <label><input type="checkbox" id="0" class="module" name="Area 51" onclick="return  moduleLimit()">Area 51</label><br>
+                        <label><input type="checkbox" id="1" class="module" name="Cicada 3301" onclick="return  moduleLimit()">Cicada 3301</label><br>
+                        <label><input type="checkbox" id="2" class="module" name="Cerebral Labyrinth" onclick="return  moduleLimit()">Cerebral Labyrinth</label><br>
+                        <label><input type="checkbox" id="3" class="module" name="Escharian Stairwells" onclick="return  moduleLimit()">Escharian Stairwells</label><br>
+                    <h3>STEM Modules</h3>
+                        <label><input type="checkbox" id="4" class="module" name="Euclid's Elements" onclick="return  moduleLimit()">Euclid's Elements</label><br>
+                        <label><input type="checkbox" id="5" class="module" name="Sceptical Chemist" onclick="return  moduleLimit()">Sceptical Chemist</label><br>
+                        <label><input type="checkbox" id="6" class="module" name="Autocode" onclick="return  moduleLimit()">Autocode</label><br>
+                        <label><input type="checkbox" id="7" class="module" name="Robosonic" onclick="return  moduleLimit()">Robosonic</label><br>
+                        <label><input type="checkbox" id="8" class="module" name="Carson's Conundrum" onclick="return  moduleLimit()">Carson's Conundrum</label><br>
+                    <p id="modulesError"></p>
+                </div>
+
+                <div class="note">note
+                    <textarea name="notes" id="notes" cols="12" rows="3"></textarea>
+                </div>
+
+                <div>
+                    <label>Brand Ambassador
+                        <select name="ambassador" id="ambassador">
+                            <option value="" selected>None</option>
+                            <option value="X">X</option>
+                            <option value="Y">Y</option>
+                            <option value="Z">Z</option>
+                            <option value="D">D</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div id="section2" style="display: none;">
+                <h2>Participant Details</h2>
+
+                <h3>Participant 1 Details</h3>
+                <label>Name: <input type="text" name="name1" placeholder="Name 1" id="name1" required></label><br>
+                <label>Email: <input type="email" name="email1" placeholder="Email 1" id="email1" required></label><br>
+                <label>Phone: <input type="number" name="phone1" placeholder="03xxxxxxxxx" id="phone1" required minlength="11" maxlength="11"></label><br>
+                <label>Institute: <input type="text" name="institute1" placeholder="Institute 1" id="institute1" required></label><br>
+                <p id="error1"></p>
+                
+                <h3>Participant 2 Details</h3>
+                <label>Name: <input type="text" name="name2" placeholder="Name 2" id="name2" required></label><br>
+                <label>Email: <input type="email" name="email2" placeholder="Email 2" id="email2" required></label><br>
+                <label>Phone: <input type="number" name="phone2" placeholder="03xxxxxxxxx" id="phone2" required minlength="11" maxlength="11"></label><br>
+                <label>Institute: <input type="text" name="institute2" placeholder="Institute 2" id="institute2" required></label><br>
+                <p id="error2"></p>
+
+                <h3>Participant 3 Details</h3>
+                <label>Name: <input type="text" name="name3" placeholder="Name 3" id="name3" required></label><br>
+                <label>Email: <input type="email" name="email3" placeholder="Email 3" id="email3" required></label><br>
+                <label>Phone: <input type="number" name="phone3" placeholder="03xxxxxxxxx" id="phone3" required minlength="10" maxlength="11"></label><br>
+                <label>Institute: <input type="text" name="institute3" placeholder="Institute 3" id="institute3" required></label><br>
+                <p id="error3"></p>
+
+                <h3>Participant 4 Details</h3>
+                <label>Name: <input type="text" name="name4" placeholder="Name 4" id="name4" required></label><br>
+                <label>Email: <input type="email" name="email4" placeholder="Email 4" id="email4" required></label><br>
+                <label>Phone: <input type="number" name="phone4" placeholder="03xxxxxxxxx" id="phone4" required minlength="11" maxlength="11"></label><br>
+                <label>Institute: <input type="text" name="institute4" placeholder="Institute 4" id="institute4" required></label><br>
+                <p id="error4"></p>
+
+            </div>
+
+            <div class="buttons">
+                <span style="display: none; border: 2px solid black; height: 20px; width: 80px; background-color: pink; cursor: pointer" onclick="handlePrev()" id="prev">Previous</span>
+                <span style="border: 2px solid black; height: 20px; width: 80px; background-color: pink; cursor: pointer" onclick="handleNext()" id="next">Next</span>
+            </div>
+
+            <button type="submit" style="display: none;" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
