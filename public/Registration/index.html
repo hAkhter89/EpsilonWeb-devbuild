@@ -1,13 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration</title>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
-  <body>
-    <script src="../../src/Registration/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body class="bg-epsilondev-blue font-Poppins">
+  <!-- Team Details -->
+  <div class="container w-[400px] h-[500px] mx-auto my-52 bg-epsilondev-white rounded-md relative hidden">
+
+    <form class="w-80 absolute top-32 left-10" action="">
+      <h3 class="font-medium m-5 text-xl text-center text-epsilondev-grey">TEAM DETAILS</h3>
+      <input class="forminput border-b-[1px] border-epsilondev-grey" type="text" placeholder="Team Name" required>
+      <input class="forminput border-b-[1px] border-epsilondev-grey" type="text" id="information"
+        placeholder="Anything you would like us to know">
+      <div class="w-full text-center my-[30px] mx-auto">
+        <button type="button" class="btn-next rounded-full">Next</button>
+      </div>
+  </div>
+  </form>
+  </div>
+
+  <!-- Modules -->
+  <div class="container w-[1200px] h-[650px] bg-epsilondev-white mx-auto my-[100px]">
+
+    <div class="modulesinformation text-center">
+      <h3 class="font-bold mb-5 text-xl">Modules</h3>
+      <p class="text-center italic font-medium">Select your desired modules, you may select upto 6 modules. <br>
+        Refer to Event Website on information about the event modules.
+      </p>
+
+
+    </div>
+    <section class="px-4 pt-20 mb-4 grid grid-cols-3 sm:grid-cols-2 gap-4">
+      <div class="w-full h-20 bg-epsilondev-grey module module1">
+        <h1 class="font-bold">Module 1</h1>
+      </div>
+      <div class="w-full h-20 bg-epsilondev-grey module module2">
+        <h1 class="font-bold">Module 2</h1>
+      </div>
+      <div class="bg-epsilondev-grey module module2 sm:hidden"></div>
+    </section>
+
+    <section class="px-4
+     mb-4 grid grid-cols-3 sm:grid-cols-2 gap-4">
+      <div class="w-full h-20 bg-epsilondev-grey module module3">
+        <h1 class="font-bold">Module 3</h1>
+      </div>
+      <div class="w-full h-20 bg-epsilondev-grey module module4">
+        <h1 class="font-bold">Module 4</h1>
+      </div>
+      <div class="bg-epsilondev-grey module module2 sm:hidden"></div>
+    </section>
+
+    <section class="px-4 mb-4 grid grid-cols-3 sm:grid-cols-2 gap-4">
+      <div class="w-full h-20 bg-epsilondev-grey module module5">
+        <h1 class="font-bold">Module 5</h1>
+      </div>
+      <div class="w-full h-20 bg-epsilondev-grey module module6">
+        <h1 class="font-bold">Module 6</h1>
+      </div>
+      <div class="bg-epsilondev-grey module module2 sm:hidden"></div>
+    </section>
+
+    <section class="px-4 mb-4 grid grid-cols-3 sm:grid-cols-2 gap-4">
+      <div class="w-full h-20 bg-epsilondev-grey module module7">
+        <h1 class="font-bold">Module 7</h1>
+      </div>
+      <div class="w-full h-20 bg-epsilondev-grey module module8">
+        <h1 class="font-bold">Module 8</h1>
+      </div>
+      <div class="bg-epsilondev-grey module module2 sm:hidden"></div>
+    </section>
+
+    <section class="px-4 mb-4 grid grid-cols-3 sm:grid-cols-2 gap-4">
+      <div class="w-full h-20 bg-epsilondev-grey module module9">
+        <h1 class="font-bold">Module 9</h1>
+      </div>
+      <div class="w-full h-20 bg-epsilondev-grey module module10">
+        <h1 class="font-bold">Module 10</h1>
+      </div>
+    </section>
+
+
+
+
+  </div>
+  <script src="../../src/Registration/main.js"></script>
+</body>
+
 </html>
