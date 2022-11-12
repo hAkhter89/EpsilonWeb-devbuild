@@ -15,6 +15,9 @@ form.addEventListener('submit', (e) => {
                     password: pass
                 }, function(data, status){
                     console.log(data);
+                    if (data === true) {
+                        window.location.href('https://www.youtube.com')
+                    }
                 }
             );
 })
