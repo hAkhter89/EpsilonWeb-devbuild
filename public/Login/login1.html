@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script defer src="../../src/Login/login.js"></script>
 </head>
 
 <style>
@@ -61,22 +64,30 @@
 </style>
 
 <body class="flex justify-center min-h-screen items-center bg-[#23242a] box-border">
+    <script>
+        $.post("http://epsilon.move.pk/query.php",
+            { query: "login" }, function (data, success) {
+                console.log(JSON.parse(data));
+            });
+    </script>
+
     <div class="container relative h-[420px] w-[380px] rounded-lg bg-[#1c1c1c] overflow-hidden">
         <div class="bg-[#28292d] form absolute flex rounded-lg z-10 px-[40px] py-[50px] flex-col inset-[2px]">
             <h2 class="text-center text-[2em] text-epsilondev-grey font-medium">Sign in</h2>
             <div class="inputBox relative w-[300px] mt-[35px]">
-                <input
-                    class="relative bg-transparent text-black w-full tracking-wider pt-[20px] pb-[10px] px-[10px] border-none outline-none text-[1em] z-10"
-                    type="text" required="required">
-                <span
-                    class="absolute left-0 px-[2px] pt-[20px] pb-[10px] text-[1.1em] text-[#8f8f8f] pointer-events-none tracking-wider transition duration-200">Username</span>
-                <i
-                    class="absolute left-0 bottom-0 w-full h-[2px] bg-[#45f3ff] rounded transition duration-500 pointer-events-none z-[9]"></i>
+                <form id="form">
+                    <input
+                        class="relative bg-transparent text-black w-full tracking-wider pt-[20px] pb-[10px] px-[10px] border-none outline-none text-[1em] z-10"
+                        type="text" required="required" id="id" value="376024">
+                    <span
+                        class="absolute left-0 px-[2px] pt-[20px] pb-[10px] text-[1.1em] text-[#8f8f8f] pointer-events-none tracking-wider transition duration-200">Username</span>
+                    <i
+                        class="absolute left-0 bottom-0 w-full h-[2px] bg-[#45f3ff] rounded transition duration-500 pointer-events-none z-[9]"></i>
             </div>
             <div class="inputBox relative w-[300px] mt-[35px]">
                 <input
                     class="relative bg-transparent text-black w-full tracking-wider pt-[20px] pb-[10px] px-[10px] border-none outline-none text-[1em] z-10"
-                    type="password" required="required">
+                    type="password" required="required" id="password" value="330">
                 <span
                     class="absolute left-0 px-[2px] pt-[20px] pb-[10px] text-[1.1em] text-[#8f8f8f] pointer-events-none tracking-wider transition duration-200">Password</span>
                 <i
@@ -89,12 +100,14 @@
                 <a class="text-[#45f3ff] my-[15px] mx-0 relative top-[50px] text-[0.75em]" href="#">not registered?,
                     sign up now!</a>
             </div>
+            <input type="checkbox" onclick="showPassword()">Show Password
             <button
-                class="hover:opacity-75 btn border-none outline-none bg-[#45f3ff] py-[11px] px-[25px] w-[100px] mt-[10px] rounded-md font-semibold cursor-pointer">Login</button>
+                class="hover:opacity-75 btn border-none outline-none bg-[#45f3ff] py-[11px] px-[25px] w-[100px] mt-[10px] rounded-md font-semibold cursor-pointer"
+                id="submit">Login</button>
+            </form>
         </div>
     </div>
 
-    <script src="../../src/Login/login.js"></script>
 </body>
 
 </html>
