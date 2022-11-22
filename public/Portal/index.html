@@ -6,8 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Epsilon User Interface</title>
     <link rel="stylesheet" href="../styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+      let hash = window.localStorage.getItem("hash")
+      $.post("http://epsilon.move.pk/query.php", {
+          query: "login",
+          hash: hash
+        }, function(result) {
+            result = JSON.parse(result);
+            console.log(result)
+            if (result) {
+              $.post("http://epsilon.move.pk/query.php", {
+                query: "teamData",
+                hash: hash
+              }, function(data){
+                  data = JSON.parse(data);
+                  console.log(data);
+              } 
+              );
+            }
+            else {
+              window.location.href = 'http://127.0.0.1:5500/public/Login/login1.html'
+            };
+          } 
+        );
+        </script>
+    <script defer src="../../src/Portal/main.js"></script>
   </head>
+
   <body>
-    <script src="../../src/Portal/main.js"></script>
+    <p>Hello World</p>
   </body>
 </html>
