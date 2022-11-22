@@ -25,8 +25,9 @@ form.addEventListener('submit', (e) => {
         }, function(data, status){
             data = JSON.parse(data);
             console.log(data);
-            if (data === true) {
-                window.location.href = 'https://www.youtube.com'
+            if (data != true) {
+                window.localStorage.setItem("hash", data)
+                window.location.href = 'http://127.0.0.1:5500/public/Portal/index.html'
             }
         } 
     );
