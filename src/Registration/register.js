@@ -95,11 +95,6 @@ const handleNext = () => {
         nameError.innerText = 'Password is required'
         errors.name = 'Password is required'
     }
-    else if (selected < 3) {
-        modulesError.innerText = 'You must select atleast 2 modules'
-        errors.modules = 'You must select atleast 2 modules'
-    }
-
     
     // Note
     data.note = notes.value
@@ -140,7 +135,8 @@ form.addEventListener('submit', (e) => {
         const phone = document.getElementById(`phone${i}`)
         const institute = document.getElementById(`institute${i}`)
         const error = document.getElementById(`error${i}`)
-
+        
+// VERIFICATION OF PARTICIPANT DETAILS
     //     if (name.value === '' || name.value === null) {
     //         error.innerText = 'This field is compulsory'
     //         errors.participant = 'This field is compulsory'
