@@ -1,3 +1,27 @@
+$.post("http://epsilon.move.pk/query.php",
+    {
+        query: "modules"
+    }, function(data){
+        data = JSON.parse(data);
+        console.log(data)
+        
+
+    } 
+);
+$.post("http://epsilon.move.pk/query.php",
+    {
+        query: "bar"
+    }, function(data){
+        data = JSON.parse(data);
+        data.forEach(function(bar) {
+            var ba = document.createElement('option')
+            ba.value = bar.id
+            ba.innerHTML = bar.name
+            document.getElementById('ambassador').appendChild(ba)
+        });
+    } 
+);
+
 const form = document.getElementById("form")
 
 const section1 = document.getElementById("section1")
@@ -69,8 +93,8 @@ let selected = 0
 const moduleLimit = () => {
     let allModules = document.querySelectorAll('.module')
 
-    for (let count = 0; count < allModules.length; count++) {
-        if (allModules[count].checked == true) {
+    for (let i = 0; i < allModules.length; i++) {
+        if (allModules[i].checked == true) {
             selected += 1
         }
     }
@@ -104,6 +128,7 @@ const handleNext = () => {
     
     if (errors.name === '' && errors.modules === '') {
         // Modules
+        data.modules = []
         for (let i = 0; i < 9; i++) {
             if (document.getElementById(i).checked) {
                 data.modules.push(i)
@@ -158,7 +183,7 @@ form.addEventListener('submit', (e) => {
     //         errors.participant = 'This field is compulsory'
     //     }
     //     else {
-            data.members[i-1].name = document.getElementById(`name${i}`).value
+            data.members[i-1].name = name.value
             data.members[i-1].email = email.value
             data.members[i-1].phone = phone.value
             data.members[i-1].institute = institute.value
