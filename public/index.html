@@ -12,21 +12,16 @@
 <body class="bg-epsilondev-grey">
   <!-- Navbar -->
   <section class="section-1 bg-epsilondev-grey">
-    <nav class="relative container mx-auto p-3">
+    <nav class="nav md:relative container mx-auto p-3 px-7 fixed top-0 bg-epsilondev-grey">
       <!-- Flex container -->
       <div class="flex items-center justify-between">
         <!-- Logo -->
-        <div class="pt-1">
+        <div class="pt-1 h-[50px]">
+          <!-- <a href="index.html" class="h-full"><img sclass="h-[350px] object-cover" src="./imgs/epsilon3purple.png" alt=""></a> -->
           <a href="index.html"><span class="font-bold text-2xl italic">Epsilon</span></a>
         </div>
         <!-- Menu Items -->
         <div class="md:flex space-x-6 hidden">
-          <a class="hover:text-darkGrayishBlue text-lg mt-2" href="#">Modules</a>
-          <a class="hover:text-darkGrayishBlue text-lg mt-2" href="#">Team</a>
-          <a class="hover:text-darkGrayishBlue text-lg mt-2" href="#">About</a>
-          <a class="hover:text-darkGrayishBlue text-lg mt-2" href="#">Contact Us</a>
-          <a class="hover:text-darkGrayishBlue text-lg mt-2" href="#">Blog</a>
-          <a class="hover:text-darkGrayishBlue text-lg mt-2" href="#">Login</a>
           <a class="hidden md:block p-3 px-6 text-white bg-epsilondev-purple rounded-full baseline hover:bg-veryDarkBlue"
             href="">
             Register
@@ -47,28 +42,29 @@
       </div>
       <div class="md:hidden">
         <div id="menu"
-          class="absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden">
+          class="absolute flex-col items-center self-end py-8 mt-7 space-y-6 px-2 font-bold bg-white text-black sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden rounded-2xl">
           <a href="">Modules</a>
           <a href="">Team</a>
           <a href="">About</a>
           <a href="">Blog</a>
           <a href="">Login</a>
+          <a href="" class="rounded-4xl font-semibold w-full text-white bg-epsilondev-purple text-center py-2 text-lg rounded-md">Register</a>
     </nav>
   </section>
 
   <section class="Section-2" id="hero">
     <!-- Flex Container -->
-    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0
+    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-20 md:mt-10 space-y-0
     md:space-y-0">
       <!-- Left Item -->
       <div class="flex flex-col mb-32 space-y-12 md:w-1/2 md:ml-20">
         <h1 class="max-w-md text-4xl font-bold text-center md:text-5x md:text-left">What is Epsilon?</h1>
-        <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">Epsilon Is organized by STEM, a student
+        <p class="max-w-sm text-center text-darkGrayishBlue md:text-left my-0">Epsilon Is organized by STEM, a student
           society at Alpha College. The event is a 3-day Science Olympiad themed on cosmology with fun modules for
           everyone!
         </p>
         <div class="flex justify-center md:justify-start">
-          <a class="p-3 px-6 text-epsilondev-blue bg-epsilondev-purple rounded-full baseline" href="">
+          <a class="p-3 px-6 hover:text-white text-epsilondev-purple bg-epsilondev-blue border border-epsilondev-purple hover:bg-epsilondev-purple rounded-3xl baseline text-xl font-semibold" href="">
             Register
           </a>
 
@@ -77,7 +73,7 @@
       <!-- Right Item/ Image -->
 
       <div class="md:w-1/2">
-        <img src="./imgs/robo1.png" alt="">
+        <img src="./imgs/robo1.png" alt="" class="h-96">
 
       </div>
     </div>
@@ -88,7 +84,7 @@
   <section class="section-3 Main">
     <div class="relative mx-auto container p-2 -mt-8">
       <div class="flex text-white justify-center">
-        <div class="text-xl flex space-x-0 justify-center bg-epsilondev-purple rounded-xl p-4">
+        <div class="text-xl space-x-0 justify-center bg-epsilondev-purple rounded-xl px-4 hidden md:flex">
           <div class="border-r-2 px-12 border-epsilondev-blue"><a class="focus:text-epsilondev-red" href="#">Modules</a>
           </div>
           <div class="border-r-2 px-12 border-epsilondev-blue"><a href="">Team</a></div>
@@ -101,26 +97,26 @@
     </div>
 
     <div
-      class="bg-white container flex flex-col md:flex-row items-center px-6 mx-auto -mt-8 space-y-0 md:space-y-0 rounded-3xl py-6">
+      class="bg-white container flex flex-col md:flex-row items-center px-6 mx-auto -mt-8 space-y-0 md:space-y-0 rounded-3xl py-2">
       <!-- Left item -->
-      <div class="flex flex-col space-y-1 py-32 px-6 md:w-1/2">
+      <div class="flex flex-col space-y-1 pt-16 pb-14 px-6 md:w-1/2">
         <h1 class="font-bold text-7xl">Epsilon</h1>
-        <h3 class="italic text-3xl">[ep.suh.lon]<span class="text-epsilondev-blue">noun</span></h3>
-        <h2 class="italic text-2xl">language: <span class="text-epsilondev-blue">greek alphabet</span></h2>
-        <h2 class="italic text-2xl">astronomy: <span class="text-epsilondev-blue">star in a constellation</span></h2>
-        <h2 class="italic text-2xl">science: <span class="text-epsilondev-blue">inter-school science olympiad</span>
+        <h3 class="italic text-3xl pb-4">[ep.suh.lon]<span class="text-epsilondev-blue">noun</span></h3>
+        <h2 class="italic text-2xl">language: <span class="not-italic text-gray-700">greek alphabet</span></h2>
+        <h2 class="italic text-2xl">astronomy: <span class="not-italic text-gray-700">star in a constellation</span></h2>
+        <h2 class="italic text-2xl">science: <span class="not-italic text-epsilondev-blue font-semibold">inter-school science olympiad</span>
         </h2>
 
       </div>
       <!-- Right Item -->
-      <div class="flex flex-col space-y-2 md:w-1/2">
+      <div class="flex flex-col space-y-2 md:w-1/2 pb-16">
         <h2 class="font-bold text-2xl">Creative Growth</h2>
-        <p class="text-lg text-epsilondev-blue">It is the ultimate battle of wits, you get an opportunity
+        <p class="text-lg text-epsilondev-blue pb-2">It is the ultimate battle of wits, you get an opportunity
           to sharpen your inventive skills and compete with the
           sharpest amongest your age group</p>
 
         <h2 class="font-bold text-2xl">Practical Approach</h2>
-        <p class="text-lg text-epsilondev-blue">An opportunity to learn more about your hobbies like
+        <p class="text-lg text-epsilondev-blue pb-2">An opportunity to learn more about your hobbies like
           coding and robotics. It is a vital chance to put use of
           your learned skills or discover a new passion</p>
 
@@ -181,21 +177,6 @@
           </div>
         </div>
 
-        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
-          <div class="rounded-l-full bg-veryPaleRed md:bg-transparent">
-            <div class="flex items-center space-x-2">
-              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-epsilondev-purple">03</div>
-              <h3 class="text-base font-bold md:mb- md:hidden">Late Registartion: </h3>
-            </div>
-
-          </div>
-          <div>
-            <h3 class="hidden mb-4 text-lg font-bold md:block">Late Registration:</h3>
-            <p class="text-darkGrayishBlue">Per delegate Registration fee: PKR 4500 <br>
-              Delegation fee: PKR 1500</p>
-          </div>
-        </div>
-
 
       </div>
     </div>
@@ -208,7 +189,7 @@
         Meet Our Organizing Team!
       </h2>
       <!-- Testamonials -->
-      <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+      <div class="flex flex-col gap-12 mt-24 md:flex-row md:space-x-6">
         <!-- Testamonial 1 -->
         <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
           <img class="w-16 -mt-14" src="./imgs/avatar-anisha.png" alt="">
@@ -218,22 +199,26 @@
           <p class="text-sm text-darkGrayishBlue">"marketing quote about how you'll love epsilon"</p>
         </div>
         <!-- Testamonial 2 -->
-        <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
-          <img class="w-16 -mt-14" src="../img/avatar-ali.png" alt="">
-          <h5 class="text-lg font-bold">Hassan Rizwan</h5>
+        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+          <img class="w-16 -mt-14" src="./imgs/avatar-anisha.png" alt="">
+          <h5 class="text-lg font-bold">Hassan<br> <span class="text-sm font-light">Executive Council</span>
+          </h5>
+          <!-- <h6 class="text-sm font-light">Executive Council</h6> -->
           <p class="text-sm text-darkGrayishBlue">"marketing quote about how you'll love epsilon"</p>
         </div>
         <!-- Testamonial 3 -->
-        <div class="hidden md:flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
-          <img class="w-16 -mt-14" src="../img/avatar-richard.png" alt="">
-          <h5 class="text-lg font-bold">Murtaza Mustafa</h5>
+        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+          <img class="w-16 -mt-14" src="./imgs/avatar-anisha.png" alt="">
+          <h5 class="text-lg font-bold">Umer<br> <span class="text-sm font-light">Executive Council</span>
+          </h5>
+          <!-- <h6 class="text-sm font-light">Executive Council</h6> -->
           <p class="text-sm text-darkGrayishBlue">"marketing quote about how you'll love epsilon"</p>
         </div>
       </div>
 
       <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
         <!-- Testamonial 4 -->
-        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+        <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
           <img class="w-16 -mt-14" alt="">
           <h5 class="text-lg font-bold">Muhammed Umer Zain</h5>
           <p class="text-sm text-darkGrayishBlue">"marketing quote about how you'll love epsilon"</p>
@@ -253,10 +238,9 @@
       </div>
 
       <!-- Button -->
-      <div class="my-16">
+      <div class="my-8 md:my-16">
         <a href="#"
-          class="p-3 px-6 pt-2 text-white bg-epsilondev-purple rounded-full baseline hover:bg-brightRedLight">View
-          Full Team</a>
+          class="py-3 px-6 text-white bg-epsilondev-purple rounded-full baseline hover:bg-epsilondev-blue hover:text-epsilondev-purple font-semibold">View Full Team</a>
       </div>
     </div>
 
@@ -267,15 +251,13 @@
   <section id="cta" class="bg-epsilondev-purple">
     <!-- Flex Container -->
     <div
-      class="container flex flex-col items-center justify-between px-6 py-24 mx-auto spacce-y-12 md:py-12 md:flex-row md:space-y-0">
+      class="container flex flex-col items-center justify-between px-6 py-12 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
       <!-- Heading -->
-      <h2 class="text-5xl font-bold leading-tight text-white md:text-4xl md:max-w-xl md:text-left">Sign up for Epsilon,
-        Earlybird registrations open!</h2>
+      <h2 class="text-3xl font-semibold leading-tight text-white md:text-4xl md:max-w-xl md:text-left text-center">Sign up for Epsilon,<br> Earlybird registrations open!</h2>
       <!-- Button -->
       <div class="my-10">
         <a href="#"
-          class="p-3 px-6 pt-2 text-epsilondev-blue bg-epsilondev-grey rounded-full shadow-2xl baseline hover:bg-gray-300">Register
-          Now</a>
+          class="p-3 px-6 pt-2 text-epsilondev-purple fonr-semibold bg-epsilondev-blue font-semibold text-lg rounded-2xl shadow-3xl baseline hover:bg-purple-300">Register Now</a>
       </div>
     </div>
 
@@ -296,37 +278,37 @@
         <div class="flex justify-center space-x-4 my-8 md:my-0">
           <!-- Link 1 -->
           <a href="">
-            <img class="h-8" src="./imgs/icon-facebook.svg" alt="">
+            <img class="h-4 lg:h-6" src="./imgs/icon-facebook.svg" alt="">
           </a>
           <!-- Link 2 -->
           <a href="">
-            <img class="h-8" src="./imgs/icon-instagram.svg" alt="">
+            <img class="h-4 lg:h-6" src="./imgs/icon-instagram.svg" alt="">
           </a>
           <!-- Link 3 -->
           <a href="">
-            <img class="h-8" src="./imgs/icon-twitter.svg" alt="">
+            <img class="h-4 lg:h-6" src="./imgs/icon-twitter.svg" alt="">
           </a>
           <!-- Link 4 -->
           <a href="">
-            <img src="" class="h-8" alt="">
+            <img src="" class="h-4 lg:h-6" alt="">
           </a>
           <!-- Link 5 -->
           <a href="">
-            <img src="" class="h-8" alt="">
+            <img src="" class="h-4 lg:h-6" alt="">
           </a>
         </div>
       </div>
       <!-- List container -->
       <div class="flex justify-around space-x-32">
         <div class="flex flex-col space-y-3 text-white">
-          <a href="" class="hover:text-epsilondev-purple">Home</a>
-          <a href="" class="hover:text-epsilondev-purple">Fees</a>
-          <a href="" class="hover:text-epsilondev-purple">Blog</a>
+          <a href="" class="hover:text-epsilondev-blue">Home</a>
+          <a href="" class="hover:text-epsilondev-blue">Fees</a>
+          <a href="" class="hover:text-epsilondev-blue">Blog</a>
         </div>
         <div class="flex flex-col space-y-3 text-white">
-          <a href="" class="hover:text-epsilondev-purple">Team</a>
-          <a href="" class="hover:text-epsilondev-purple">About STEM</a>
-          <a href="" class="hover:text-epsilondev-purple">Rules/Guidelines</a>
+          <a href="" class="hover:text-epsilondev-blue">Team</a>
+          <a href="" class="hover:text-epsilondev-blue">About STEM</a>
+          <a href="" class="hover:text-epsilondev-blue">Rules/Guidelines</a>
         </div>
       </div>
       <!-- Input Container -->
