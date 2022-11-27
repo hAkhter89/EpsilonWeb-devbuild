@@ -12,10 +12,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        "epsilondev-purple": "#5267DF",
+        "epsilondev-purple": "#361553",
         "epsilondev-red": "#FA5959",
-        "epsilondev-blue": "#242A45",
-        "epsilondev-grey": "#9194A2",
+        "epsilondev-blue": "#bb71e2",
+        "epsilondev-grey": "#ECECEC",
         "epsilondev-white": "#f7f7f7",
         brightRed: "hsl(12, 88%, 59%)",
         brightRedLight: "hsl(12, 88%, 69%)",
