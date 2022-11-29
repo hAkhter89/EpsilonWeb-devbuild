@@ -665,6 +665,11 @@ video {
   margin-right: 0px;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -705,8 +710,8 @@ video {
   margin-top: 10px;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
+.-ml-4 {
+  margin-left: -1rem;
 }
 
 .box-border {
@@ -946,6 +951,11 @@ video {
   background-color: rgb(236 236 236 / var(--tw-bg-opacity));
 }
 
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .bg-epsilondev-purple {
   --tw-bg-opacity: 1;
   background-color: rgb(54 21 83 / var(--tw-bg-opacity));
@@ -1005,6 +1015,11 @@ video {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -1034,6 +1049,11 @@ video {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-32 {
@@ -1096,9 +1116,9 @@ video {
   padding-right: 25px;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pt-1 {
@@ -1107,6 +1127,10 @@ video {
 
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .pt-\[20px\] {
@@ -1121,9 +1145,8 @@ video {
   text-align: center;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.font-Poppins {
+  font-family: Poppins, sans-serif;
 }
 
 .text-lg {
@@ -1149,6 +1172,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-base {
@@ -1228,11 +1256,6 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
-.text-blue-200 {
-  --tw-text-opacity: 1;
-  color: rgb(191 219 254 / var(--tw-text-opacity));
 }
 
 .text-epsilondev-grey {
@@ -1397,11 +1420,6 @@ video {
   color: rgb(69 243 255 / var(--tw-text-opacity));
 }
 
-.hover\:text-epsilondev-blue:hover {
-  --tw-text-opacity: 1;
-  color: rgb(187 113 226 / var(--tw-text-opacity));
-}
-
 .hover\:opacity-75:hover {
   opacity: 0.75;
 }
@@ -1430,18 +1448,6 @@ video {
   .md\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
-  }
-
-  .md\:-mr-20 {
-    margin-right: -5rem;
-  }
-
-  .md\:-mr-24 {
-    margin-right: -6rem;
-  }
-
-  .md\:-ml-20 {
-    margin-left: -5rem;
   }
 
   .md\:ml-20 {
@@ -1512,6 +1518,19 @@ video {
   .md\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:pl-20 {
+    padding-left: 5rem;
   }
 
   .md\:text-left {
