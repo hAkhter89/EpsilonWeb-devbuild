@@ -1,13 +1,14 @@
-const form = document.getElementById("form")
+const form = document.getElementById("form");
+const togglePassword = document.getElementById("togglePassword");
 
 function showPassword() {
     var x = document.getElementById("password");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
+    if (x.type === "password") x.type = "text";
+    else x.type = "password";
 }
+
+togglePassword.addEventListener("click", function () { showPassword(); });
+
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -27,7 +28,7 @@ form.addEventListener('submit', (e) => {
             console.log(data);
             if (data != true) {
                 window.localStorage.setItem("hash", data)
-                window.location.href = 'http://127.0.0.1:5500/public/Portal/index.html'
+                // window.location.href = 'http://127.0.0.1:5500/public/Portal/index.html'
             }
         } 
     );
